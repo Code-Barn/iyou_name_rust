@@ -25,3 +25,6 @@ pub use core::ancestor_data::AncestorData;
 pub use core::data_types::{ChartSettings, GenerationOverlay, PersonData};
 pub use core::error::ChartError;
 pub use generators::{GenerationStrategyTrait, RadialSpecs, SunbeamSpecs, UnifiedChartGenerator};
+
+#[cfg(feature = "python")]
+pub mod python_module;

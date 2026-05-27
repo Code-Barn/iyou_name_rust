@@ -1,5 +1,5 @@
-   0.236662808s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="iyou_chart_kernel"}: cargo::core::compiler::fingerprint: fingerprint error for iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("iyou_chart_kernel", ["lib"], "/Users/macuser/CODE_BASE/iyou_name_rust/src/lib.rs", Edition2021) }
-   0.236748847s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="iyou_chart_kernel"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/iyou_chart_kernel-e7056db8fb6a6053/lib-iyou_chart_kernel`
+   0.733624576s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="iyou_chart_kernel"}: cargo::core::compiler::fingerprint: fingerprint error for iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust)/Check { test: false }/TargetInner { ..: lib_target("iyou_chart_kernel", ["cdylib"], "/Users/macuser/CODE_BASE/iyou_name_rust/src/lib.rs", Edition2021) }
+   0.734343778s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="iyou_chart_kernel"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/iyou_chart_kernel-2130a1633d39da8d/lib-iyou_chart_kernel`
 
 Caused by:
     No such file or directory (os error 2)
@@ -24,8 +24,8 @@ Stack backtrace:
   16: std::rt::lang_start_internal
   17: _main
   18: <unknown>
-   0.307359144s  INFO prepare_target{force=false package_id=magick_rust v0.15.0 target="magick_rust"}: cargo::core::compiler::fingerprint: fingerprint error for magick_rust v0.15.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("magick_rust", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/magick_rust-0.15.0/src/lib.rs", Edition2015) }
-   0.307401323s  INFO prepare_target{force=false package_id=magick_rust v0.15.0 target="magick_rust"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/magick_rust-e937f465ba8c4790/lib-magick_rust`
+   0.760128962s  INFO prepare_target{force=false package_id=magick_rust v0.15.0 target="magick_rust"}: cargo::core::compiler::fingerprint: fingerprint error for magick_rust v0.15.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("magick_rust", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/magick_rust-0.15.0/src/lib.rs", Edition2015) }
+   0.760216197s  INFO prepare_target{force=false package_id=magick_rust v0.15.0 target="magick_rust"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/magick_rust-e937f465ba8c4790/lib-magick_rust`
 
 Caused by:
     No such file or directory (os error 2)
@@ -51,8 +51,8 @@ Stack backtrace:
   17: std::rt::lang_start_internal
   18: _main
   19: <unknown>
-   0.308150726s  INFO prepare_target{force=false package_id=magick_rust v0.15.0 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for magick_rust v0.15.0/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/magick_rust-0.15.0/build.rs", Edition2015) }
-   0.308168291s  INFO prepare_target{force=false package_id=magick_rust v0.15.0 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/magick_rust-a43dae282f3fa875/run-build-script-build-script-build`
+   0.763608816s  INFO prepare_target{force=false package_id=magick_rust v0.15.0 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for magick_rust v0.15.0/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/magick_rust-0.15.0/build.rs", Edition2015) }
+   0.763683083s  INFO prepare_target{force=false package_id=magick_rust v0.15.0 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/magick_rust-a43dae282f3fa875/run-build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -80,8 +80,8 @@ Stack backtrace:
   19: std::rt::lang_start_internal
   20: _main
   21: <unknown>
-   0.342175401s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="iyou_chart_kernel"}: cargo::core::compiler::fingerprint: fingerprint error for iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("iyou_chart_kernel", ["lib"], "/Users/macuser/CODE_BASE/iyou_name_rust/src/lib.rs", Edition2021) }
-   0.342206580s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="iyou_chart_kernel"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/iyou_chart_kernel-03e277633bcd2f0e/test-lib-iyou_chart_kernel`
+   0.953097290s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="iyou_chart_kernel"}: cargo::core::compiler::fingerprint: fingerprint error for iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust)/Check { test: true }/TargetInner { ..: lib_target("iyou_chart_kernel", ["cdylib"], "/Users/macuser/CODE_BASE/iyou_name_rust/src/lib.rs", Edition2021) }
+   0.953151066s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="iyou_chart_kernel"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/iyou_chart_kernel-4a0c5f401b670d4f/test-lib-iyou_chart_kernel`
 
 Caused by:
     No such file or directory (os error 2)
@@ -106,8 +106,8 @@ Stack backtrace:
   16: std::rt::lang_start_internal
   17: _main
   18: <unknown>
-   0.344570845s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="simple_generation"}: cargo::core::compiler::fingerprint: fingerprint error for iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust)/Check { test: false }/TargetInner { kind: "example", name: "simple_generation", tested: false, benched: false, ..: with_path("/Users/macuser/CODE_BASE/iyou_name_rust/examples/simple_generation.rs", Edition2021) }
-   0.344613647s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="simple_generation"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/iyou_chart_kernel-897741fa94ddc700/example-simple_generation`
+   0.956906384s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="simple_generation"}: cargo::core::compiler::fingerprint: fingerprint error for iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust)/Check { test: false }/TargetInner { kind: "example", name: "simple_generation", tested: false, benched: false, ..: with_path("/Users/macuser/CODE_BASE/iyou_name_rust/examples/simple_generation.rs", Edition2021) }
+   0.956944443s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="simple_generation"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/iyou_chart_kernel-c50b818aad9271fb/example-simple_generation`
 
 Caused by:
     No such file or directory (os error 2)
@@ -231,7 +231,7 @@ Caused by:
   cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
   cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
   cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
-  cargo:rustc-link-search=native=/usr/local/Cellar/imagemagick/7.1.2-23/lib
+  cargo:rustc-link-search=native=/usr/local/Cellar/imagemagick/7.1.2-24/lib
   cargo:rerun-if-env-changed=IMAGE_MAGICK_INCLUDE_DIRS
   cargo:rerun-if-env-changed=IMAGE_MAGICK_DIR
   cargo:rerun-if-env-changed=MAGICKWAND_NO_PKG_CONFIG
@@ -324,7 +324,7 @@ Caused by:
   cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
   cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
   cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
-  cargo:include=/usr/local/Cellar/imagemagick/7.1.2-23/include/ImageMagick-7
+  cargo:include=/usr/local/Cellar/imagemagick/7.1.2-24/include/ImageMagick-7
   cargo:rerun-if-env-changed=IMAGE_MAGICK_LIBS
   cargo:rerun-if-env-changed=MAGICKWAND_NO_PKG_CONFIG
   cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
@@ -422,7 +422,7 @@ Caused by:
 
   --- stderr
 
-  thread 'main' (1536729) panicked at /Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bindgen-0.59.2/src/ir/context.rs:878:9:
+  thread 'main' (1614631) panicked at /Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bindgen-0.59.2/src/ir/context.rs:878:9:
   "wait_struct_(unnamed_at_/Library/Developer/CommandLineTools/SDKs/MacOSX_sdk/usr/include/sys/wait_h_199_2)" is not a valid Ident
   stack backtrace:
      0: __rustc::rust_begin_unwind
