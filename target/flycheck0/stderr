@@ -1,0 +1,454 @@
+   0.236662808s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="iyou_chart_kernel"}: cargo::core::compiler::fingerprint: fingerprint error for iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("iyou_chart_kernel", ["lib"], "/Users/macuser/CODE_BASE/iyou_name_rust/src/lib.rs", Edition2021) }
+   0.236748847s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="iyou_chart_kernel"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/iyou_chart_kernel-e7056db8fb6a6053/lib-iyou_chart_kernel`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: std::rt::lang_start_internal
+  17: _main
+  18: <unknown>
+   0.307359144s  INFO prepare_target{force=false package_id=magick_rust v0.15.0 target="magick_rust"}: cargo::core::compiler::fingerprint: fingerprint error for magick_rust v0.15.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("magick_rust", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/magick_rust-0.15.0/src/lib.rs", Edition2015) }
+   0.307401323s  INFO prepare_target{force=false package_id=magick_rust v0.15.0 target="magick_rust"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/magick_rust-e937f465ba8c4790/lib-magick_rust`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: _main
+  19: <unknown>
+   0.308150726s  INFO prepare_target{force=false package_id=magick_rust v0.15.0 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for magick_rust v0.15.0/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/magick_rust-0.15.0/build.rs", Edition2015) }
+   0.308168291s  INFO prepare_target{force=false package_id=magick_rust v0.15.0 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/magick_rust-a43dae282f3fa875/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+  21: <unknown>
+   0.342175401s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="iyou_chart_kernel"}: cargo::core::compiler::fingerprint: fingerprint error for iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("iyou_chart_kernel", ["lib"], "/Users/macuser/CODE_BASE/iyou_name_rust/src/lib.rs", Edition2021) }
+   0.342206580s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="iyou_chart_kernel"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/iyou_chart_kernel-03e277633bcd2f0e/test-lib-iyou_chart_kernel`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: std::rt::lang_start_internal
+  17: _main
+  18: <unknown>
+   0.344570845s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="simple_generation"}: cargo::core::compiler::fingerprint: fingerprint error for iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust)/Check { test: false }/TargetInner { kind: "example", name: "simple_generation", tested: false, benched: false, ..: with_path("/Users/macuser/CODE_BASE/iyou_name_rust/examples/simple_generation.rs", Edition2021) }
+   0.344613647s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="simple_generation"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/iyou_chart_kernel-897741fa94ddc700/example-simple_generation`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: std::rt::lang_start_internal
+  17: _main
+  18: <unknown>
+   Compiling magick_rust v0.15.0
+error: failed to run custom build command for `magick_rust v0.15.0`
+note: To improve backtraces for build dependencies, set the CARGO_PROFILE_DEV_BUILD_OVERRIDE_DEBUG=true environment variable to enable debug information generation.
+
+Caused by:
+  process didn't exit successfully: `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/build/magick_rust-29091405accfcf59/build-script-build` (exit status: 101)
+  --- stdout
+  cargo:rerun-if-env-changed=IMAGE_MAGICK_LIB_DIRS
+  cargo:rerun-if-env-changed=IMAGE_MAGICK_DIR
+  cargo:rerun-if-env-changed=MAGICKWAND_NO_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG
+  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
+  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
+  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG
+  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
+  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=MAGICKWAND_NO_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG
+  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
+  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
+  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG
+  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
+  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+  cargo:rustc-link-search=native=/usr/local/Cellar/imagemagick/7.1.2-23/lib
+  cargo:rerun-if-env-changed=IMAGE_MAGICK_INCLUDE_DIRS
+  cargo:rerun-if-env-changed=IMAGE_MAGICK_DIR
+  cargo:rerun-if-env-changed=MAGICKWAND_NO_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG
+  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
+  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
+  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG
+  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
+  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=MAGICKWAND_NO_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG
+  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
+  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
+  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG
+  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
+  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+  cargo:include=/usr/local/Cellar/imagemagick/7.1.2-23/include/ImageMagick-7
+  cargo:rerun-if-env-changed=IMAGE_MAGICK_LIBS
+  cargo:rerun-if-env-changed=MAGICKWAND_NO_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG
+  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
+  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
+  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG
+  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
+  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=MAGICKWAND_NO_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG
+  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
+  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
+  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG
+  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
+  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=IMAGE_MAGICK_STATIC
+  cargo:rustc-link-lib=dylib=MagickWand-7.Q16HDRI
+  cargo:rustc-link-lib=dylib=MagickCore-7.Q16HDRI
+
+  --- stderr
+
+  thread 'main' (1536729) panicked at /Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bindgen-0.59.2/src/ir/context.rs:878:9:
+  "wait_struct_(unnamed_at_/Library/Developer/CommandLineTools/SDKs/MacOSX_sdk/usr/include/sys/wait_h_199_2)" is not a valid Ident
+  stack backtrace:
+     0: __rustc::rust_begin_unwind
+               at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/panicking.rs:689:5
+     1: core::panicking::panic_fmt
+               at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/core/src/panicking.rs:80:14
+     2: proc_macro2::fallback::validate_ident
+     3: proc_macro2::fallback::Ident::new_checked
+     4: proc_macro2::imp::Ident::new_checked
+     5: proc_macro2::Ident::new
+     6: bindgen::ir::context::BindgenContext::rust_ident_raw
+     7: bindgen::ir::context::BindgenContext::rust_ident
+     8: <bindgen::ir::comp::CompInfo as bindgen::codegen::CodeGenerator>::codegen
+     9: <bindgen::ir::ty::Type as bindgen::codegen::CodeGenerator>::codegen
+    10: <bindgen::ir::item::Item as bindgen::codegen::CodeGenerator>::codegen
+    11: <bindgen::ir::comp::CompInfo as bindgen::codegen::CodeGenerator>::codegen
+    12: <bindgen::ir::ty::Type as bindgen::codegen::CodeGenerator>::codegen
+    13: <bindgen::ir::item::Item as bindgen::codegen::CodeGenerator>::codegen
+    14: <bindgen::ir::module::Module as bindgen::codegen::CodeGenerator>::codegen::{{closure}}
+    15: <bindgen::ir::module::Module as bindgen::codegen::CodeGenerator>::codegen
+    16: <bindgen::ir::item::Item as bindgen::codegen::CodeGenerator>::codegen
+    17: bindgen::codegen::codegen::{{closure}}
+    18: bindgen::ir::context::BindgenContext::gen
+    19: bindgen::codegen::codegen
+    20: bindgen::Bindings::generate
+    21: bindgen::Builder::generate
+    22: build_script_build::main
+    23: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
