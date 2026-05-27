@@ -6,7 +6,7 @@ use crate::rendering::{TextAbbreviator, TextRenderer};
 /// Sunbeam Strategy: Generations 6-7 with dense concentric layouts
 /// Implements strict text constraints and 105px concentric row spacing
 /// Uses iterative generation of positions to avoid verbose repetition
-use magick_rust::{CompositeOperator, DrawingWand, FilterTypes, MagickWand, PixelWand};
+use magick_rust::{CompositeOperator, DrawingWand, FilterType, MagickWand, PixelWand};
 
 /// Sunbeam strategy for Generations 6-7
 /// Handles dense layouts with aggressive text abbreviation
@@ -77,7 +77,7 @@ impl SunbeamStrategy {
 
         // Apply outside stroke if enabled
         if settings.use_outside_stroke {
-            self.draw_stroke_effect(&mut draw, &display_name, position, settings)?;
+            self.draw_stroke_effect(wand, &mut draw, &display_name, position, settings)?;
         }
 
         wand.draw(&draw);
@@ -87,6 +87,7 @@ impl SunbeamStrategy {
     /// Draw stroke effect for sunbeam positions
     fn draw_stroke_effect(
         &self,
+        wand: &mut MagickWand,
         draw: &mut DrawingWand,
         display_name: &str,
         position: &crate::generators::specs::sunbeam_specs::SunbeamPositionSpec,
@@ -146,7 +147,7 @@ impl SunbeamStrategy {
         // Scale the overlay using generation-specific scale factor
         let scaled_width = (1950 as f64 * overlay_settings.scale) as usize;
         let scaled_height = (1950 as f64 * overlay_settings.scale) as usize;
-        overlay_wand.resize(scaled_width, scaled_height, FilterTypes::LanczosFilter)?;
+        overlay_wand.resize(scaled_width, scaled_height, FilterType::LanczosFilter)?;
 
         // Position in center
         let pos_x = (1950 - scaled_width) / 2;

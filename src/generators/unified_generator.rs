@@ -1,5 +1,7 @@
 use crate::core::{AncestorData, ChartError, ChartSettings, PersonData};
-use crate::generators::strategies::{Gen1Strategy, Gen2Strategy, GenerationStrategyTrait};
+use crate::generators::strategies::{
+    Gen1Strategy, Gen2Strategy, GenerationStrategyTrait, RadialStrategy, SunbeamStrategy,
+};
 use magick_rust::MagickWand;
 /// Unified API interface that routes to specialized strategies
 /// Maintains a single interface for all generations (1-7)

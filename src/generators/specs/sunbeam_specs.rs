@@ -1,7 +1,7 @@
 /// Sunbeam specifications for Generations 6-7
 /// Dense concentric layouts with aggressive text constraints
 /// Implements strict 105px concentric row spacing from prototype_image_6generator.py and prototype_image_7generator.py
-use crate::core::{FlagPosition, FontSizes, GenerationOverlay, PositionCoordinates};
+use crate::core::{FontSizes, GenerationOverlay, PositionCoordinates};
 
 /// Position specification for sunbeam generations (6-7)
 #[derive(Debug, Clone)]
@@ -116,9 +116,9 @@ impl SunbeamSpecs {
 
         for i in 0..32 {
             let id = ids[i];
-            let rotation = rotations[i];
+            let rotation: f32 = rotations[i];
 
-            // Calculate position based on rotation and radius
+            // Calculate position based on rotation and rotation
             let rad = rotation.to_radians();
             let x = base_radius * rad.cos();
             let y = base_radius * rad.sin();

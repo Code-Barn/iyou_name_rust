@@ -2,7 +2,7 @@ use crate::core::constants::*;
 use crate::core::{ChartError, ChartSettings, GenerationOverlay, PersonData};
 use crate::generators::gen1::Gen1Generator;
 /// Generation 2 chart generator - Parent layout with 180° recursive composition
-use magick_rust::{CompositeOperator, DrawingWand, FilterTypes, MagickWand, PixelWand};
+use magick_rust::{CompositeOperator, DrawingWand, FilterType, MagickWand, PixelWand};
 
 /// Generator for 2-generation charts (primary + parents)
 pub struct Gen2Generator {
@@ -119,7 +119,7 @@ impl Gen2Generator {
         // Scale the overlay
         let scaled_width = (CANVAS_WIDTH as f64 * self.overlay_settings.scale) as usize;
         let scaled_height = (CANVAS_HEIGHT as f64 * self.overlay_settings.scale) as usize;
-        overlay_wand.resize(scaled_width, scaled_height, FilterTypes::LanczosFilter)?;
+        overlay_wand.resize(scaled_width, scaled_height, FilterType::LanczosFilter)?;
 
         // Position in center
         let pos_x = (CANVAS_WIDTH as i32 - scaled_width as i32) / 2;

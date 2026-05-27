@@ -1,6 +1,6 @@
 /// Text abbreviation engine for high-density layouts
 /// Ensures name strings never exceed quadrant boundaries in outer tiers
-use lazy_static::lazy_static;
+use once_cell::sync::Lazy;
 use regex::Regex;
 use std::collections::HashMap;
 
@@ -197,10 +197,11 @@ impl TextAbbreviator {
 
 /// Character normalization utilities
 pub mod char_normalization {
-    lazy_static! {
-        static ref MULTIPLE_SPACES: Regex = Regex::new(r"\s+").unwrap();
-        static ref LEADING_TRAILING_SPACES: Regex = Regex::new(r"^\s+|\s+$").unwrap();
-    }
+    use super::Regex;
+    use once_cell::sync::Lazy;
+
+    static MULTIPLE_SPACES: Lazy<Regex> = Lazy::new(|| Regex::new(r"\s+").unwrap());
+    static LEADING_TRAILING_SPACES: Lazy<Regex> = Lazy::new(|| Regex::new(r"^\s+|\s+$").unwrap());
 
     /// Normalize whitespace in text
     pub fn normalize_whitespace(text: &str) -> String {

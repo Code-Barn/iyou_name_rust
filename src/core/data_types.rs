@@ -1,6 +1,31 @@
 /// Core data structures for the chart generation engine
+use serde::{Deserialize, Serialize};
 
-use serde::{Serialize, Deserialize};
+/// Font sizes for different text elements
+#[derive(Debug, Clone, Copy)]
+pub struct FontSizes {
+    pub name: f64,
+    pub date: f64,
+    pub place: f64,
+}
+
+/// 2D position coordinates with optional offsets
+#[derive(Debug, Clone, Copy)]
+pub struct PositionCoordinates {
+    pub base_x: f64,
+    pub base_y: f64,
+    pub offset_x: f64,
+    pub offset_y: f64,
+}
+
+/// Flag position and size information
+#[derive(Debug, Clone, Copy)]
+pub struct FlagPosition {
+    pub base_x: f64,
+    pub base_y: f64,
+    pub rotation: f64,
+    pub size: u32,
+}
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct PersonData {

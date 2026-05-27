@@ -6,7 +6,7 @@ use crate::rendering::text_renderer::TextRenderer;
 /// Radial Strategy: Generations 3-5 with quadrant tracking
 /// Configuration-driven specs with native matrix transformations
 /// Implements precise layout from prototype_image_3generator.py through prototype_image_5generator.py
-use magick_rust::{CompositeOperator, DrawingWand, FilterTypes, MagickWand, PixelWand};
+use magick_rust::{CompositeOperator, DrawingWand, FilterType, MagickWand, PixelWand};
 
 /// Radial strategy for Generations 3-5
 /// Uses configuration-driven specifications with native transformations
@@ -71,7 +71,7 @@ impl RadialStrategy {
 
         // Apply outside stroke if enabled
         if settings.use_outside_stroke {
-            self.draw_stroke_effect(&mut draw, individual, position, settings)?;
+            self.draw_stroke_effect(wand, &mut draw, individual, position, settings)?;
         }
 
         wand.draw(&draw);
@@ -81,6 +81,7 @@ impl RadialStrategy {
     /// Draw stroke effect for radial positions
     fn draw_stroke_effect(
         &self,
+        wand: &mut MagickWand,
         draw: &mut DrawingWand,
         individual: &PersonData,
         position: &crate::generators::specs::radial_specs::RadialPositionSpec,
@@ -137,7 +138,7 @@ impl RadialStrategy {
         // Scale the overlay using generation-specific scale factor
         let scaled_width = (1950 as f64 * overlay_settings.scale) as usize;
         let scaled_height = (1950 as f64 * overlay_settings.scale) as usize;
-        overlay_wand.resize(scaled_width, scaled_height, FilterTypes::LanczosFilter)?;
+        overlay_wand.resize(scaled_width, scaled_height, FilterType::LanczosFilter)?;
 
         // Position in center
         let pos_x = (1950 - scaled_width) / 2;

@@ -1,13 +1,6 @@
-# Global ImageMagick 7 configuration for iyou_chart_kernel
-# Enforces HDRI and Quantum Depth settings across all dependency crates
-
-[env]
-BINDGEN_EXTRA_CLANG_ARGS = "-D__ALLOW_UNNAMED_STRUCTURES -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16"
+# ImageMagick 7 configuration for iyou_chart_kernel
+# These settings are now handled in build.rs for better isolation
 
 [build]
 # Ensure consistent build environment
 rustflags = ["-C", "debuginfo=0"]
-
-[target.'cfg(unix)']
-# Unix-specific linker settings for ImageMagick
-rustflags = ["-C", "link-arg=-lMagickWand-7.Q16HDRI", "-C", "link-arg=-lMagickCore-7.Q16HDRI"]
