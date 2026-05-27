@@ -1,5 +1,0 @@
-cargo:rustc-env=MAGICKCORE_HDRI_ENABLE=1
-cargo:rustc-env=MAGICKCORE_QUANTUM_DEPTH=16
-cargo:rustc-env=__ALLOW_UNNAMED_STRUCTURES=1
-cargo:rerun-if-changed=src/
-cargo:rerun-if-changed=build.rs

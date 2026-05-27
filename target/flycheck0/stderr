@@ -1,5 +1,5 @@
-   0.584022253s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="iyou_chart_kernel"}: cargo::core::compiler::fingerprint: fingerprint error for iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust)/Check { test: false }/TargetInner { ..: lib_target("iyou_chart_kernel", ["cdylib"], "/Users/macuser/CODE_BASE/iyou_name_rust/src/lib.rs", Edition2021) }
-   0.588595117s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="iyou_chart_kernel"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/iyou_chart_kernel-2130a1633d39da8d/lib-iyou_chart_kernel`
+   0.573480211s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="iyou_chart_kernel"}: cargo::core::compiler::fingerprint: fingerprint error for iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust)/Check { test: false }/TargetInner { ..: lib_target("iyou_chart_kernel", ["cdylib"], "/Users/macuser/CODE_BASE/iyou_name_rust/src/lib.rs", Edition2021) }
+   0.573816820s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="iyou_chart_kernel"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/iyou_chart_kernel-3e94625984478473/lib-iyou_chart_kernel`
 
 Caused by:
     No such file or directory (os error 2)
@@ -24,8 +24,8 @@ Stack backtrace:
   16: std::rt::lang_start_internal
   17: _main
   18: <unknown>
-   0.672440314s  INFO prepare_target{force=false package_id=magick_rust v0.15.0 target="magick_rust"}: cargo::core::compiler::fingerprint: fingerprint error for magick_rust v0.15.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("magick_rust", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/magick_rust-0.15.0/src/lib.rs", Edition2015) }
-   0.672472604s  INFO prepare_target{force=false package_id=magick_rust v0.15.0 target="magick_rust"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/magick_rust-e937f465ba8c4790/lib-magick_rust`
+   0.651200758s  INFO prepare_target{force=false package_id=env_logger v0.10.2 target="env_logger"}: cargo::core::compiler::fingerprint: fingerprint error for env_logger v0.10.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("env_logger", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/env_logger-0.10.2/src/lib.rs", Edition2021) }
+   0.651231655s  INFO prepare_target{force=false package_id=env_logger v0.10.2 target="env_logger"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/env_logger-856a728839885776/lib-env_logger`
 
 Caused by:
     No such file or directory (os error 2)
@@ -51,8 +51,210 @@ Stack backtrace:
   17: std::rt::lang_start_internal
   18: _main
   19: <unknown>
-   0.673294395s  INFO prepare_target{force=false package_id=magick_rust v0.15.0 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for magick_rust v0.15.0/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/magick_rust-0.15.0/build.rs", Edition2015) }
-   0.673322398s  INFO prepare_target{force=false package_id=magick_rust v0.15.0 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/magick_rust-a43dae282f3fa875/run-build-script-build-script-build`
+   0.653454014s  INFO prepare_target{force=false package_id=is-terminal v0.4.17 target="is_terminal"}: cargo::core::compiler::fingerprint: fingerprint error for is-terminal v0.4.17/Check { test: false }/TargetInner { ..: lib_target("is_terminal", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/is-terminal-0.4.17/src/lib.rs", Edition2018) }
+   0.653502484s  INFO prepare_target{force=false package_id=is-terminal v0.4.17 target="is_terminal"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/is-terminal-6107c32442ee201e/lib-is_terminal`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+  20: <unknown>
+   0.653953971s  INFO prepare_target{force=false package_id=libc v0.2.186 target="libc"}: cargo::core::compiler::fingerprint: fingerprint error for libc v0.2.186/Check { test: false }/TargetInner { ..: lib_target("libc", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.186/src/lib.rs", Edition2021) }
+   0.653969672s  INFO prepare_target{force=false package_id=libc v0.2.186 target="libc"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/libc-8e8137eac1972f9a/lib-libc`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+  21: <unknown>
+   0.654866477s  INFO prepare_target{force=false package_id=libc v0.2.186 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for libc v0.2.186/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.186/build.rs", Edition2021) }
+   0.654885957s  INFO prepare_target{force=false package_id=libc v0.2.186 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/libc-f2402b2876129411/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  13: cargo::ops::cargo_compile::compile_ws
+  14: cargo::ops::cargo_compile::compile_with_exec
+  15: cargo::ops::cargo_compile::compile
+  16: cargo::commands::check::exec
+  17: <cargo::cli::Exec>::exec
+  18: cargo::main
+  19: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  20: std::rt::lang_start::<()>::{closure#0}
+  21: std::rt::lang_start_internal
+  22: _main
+  23: <unknown>
+   0.655153631s  INFO prepare_target{force=false package_id=libc v0.2.186 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for libc v0.2.186/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.186/build.rs", Edition2021) }
+   0.655167786s  INFO prepare_target{force=false package_id=libc v0.2.186 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/libc-12fe4e22bf5ce5ab/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  13: cargo::ops::cargo_compile::compile_ws
+  14: cargo::ops::cargo_compile::compile_with_exec
+  15: cargo::ops::cargo_compile::compile
+  16: cargo::commands::check::exec
+  17: <cargo::cli::Exec>::exec
+  18: cargo::main
+  19: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  20: std::rt::lang_start::<()>::{closure#0}
+  21: std::rt::lang_start_internal
+  22: _main
+  23: <unknown>
+   0.658428493s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust)/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/CODE_BASE/iyou_name_rust/build.rs", Edition2021) }
+   0.658451303s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/iyou_chart_kernel-093a2c9fca2cae3b/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+  20: <unknown>
+   0.658698944s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust)/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/CODE_BASE/iyou_name_rust/build.rs", Edition2021) }
+   0.658713754s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/iyou_chart_kernel-f85875ff713bc0c2/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+  20: <unknown>
+   0.659204402s  INFO prepare_target{force=false package_id=magick_rust v0.20.0 target="magick_rust"}: cargo::core::compiler::fingerprint: fingerprint error for magick_rust v0.20.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("magick_rust", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/magick_rust-0.20.0/src/lib.rs", Edition2015) }
+   0.659223831s  INFO prepare_target{force=false package_id=magick_rust v0.20.0 target="magick_rust"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/magick_rust-22eb5c9dc07f0d78/lib-magick_rust`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: _main
+  19: <unknown>
+   0.659932398s  INFO prepare_target{force=false package_id=magick_rust v0.20.0 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for magick_rust v0.20.0/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/magick_rust-0.20.0/build.rs", Edition2015) }
+   0.659951044s  INFO prepare_target{force=false package_id=magick_rust v0.20.0 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/magick_rust-d7ea8079aadcc7f9/run-build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -80,8 +282,1923 @@ Stack backtrace:
   19: std::rt::lang_start_internal
   20: _main
   21: <unknown>
-   0.714649776s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="iyou_chart_kernel"}: cargo::core::compiler::fingerprint: fingerprint error for iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust)/Check { test: true }/TargetInner { ..: lib_target("iyou_chart_kernel", ["cdylib"], "/Users/macuser/CODE_BASE/iyou_name_rust/src/lib.rs", Edition2021) }
-   0.714728941s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="iyou_chart_kernel"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/iyou_chart_kernel-4a0c5f401b670d4f/test-lib-iyou_chart_kernel`
+   0.660225590s  INFO prepare_target{force=false package_id=magick_rust v0.20.0 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for magick_rust v0.20.0/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/magick_rust-0.20.0/build.rs", Edition2015) }
+   0.660256289s  INFO prepare_target{force=false package_id=magick_rust v0.20.0 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/magick_rust-f38e6a8eaeaa3b7f/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+  21: <unknown>
+   0.660963147s  INFO prepare_target{force=false package_id=bindgen v0.69.5 target="bindgen"}: cargo::core::compiler::fingerprint: fingerprint error for bindgen v0.69.5/Build/TargetInner { ..: lib_target("bindgen", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bindgen-0.69.5/lib.rs", Edition2018) }
+   0.660983311s  INFO prepare_target{force=false package_id=bindgen v0.69.5 target="bindgen"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/bindgen-feb202eef742d9e5/lib-bindgen`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+  22: <unknown>
+   0.662387137s  INFO prepare_target{force=false package_id=bindgen v0.69.5 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for bindgen v0.69.5/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bindgen-0.69.5/build.rs", Edition2018) }
+   0.662408676s  INFO prepare_target{force=false package_id=bindgen v0.69.5 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/bindgen-af2b2b58023ec290/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  14: cargo::ops::cargo_compile::compile_ws
+  15: cargo::ops::cargo_compile::compile_with_exec
+  16: cargo::ops::cargo_compile::compile
+  17: cargo::commands::check::exec
+  18: <cargo::cli::Exec>::exec
+  19: cargo::main
+  20: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  21: std::rt::lang_start::<()>::{closure#0}
+  22: std::rt::lang_start_internal
+  23: _main
+  24: <unknown>
+   0.662730925s  INFO prepare_target{force=false package_id=bindgen v0.69.5 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for bindgen v0.69.5/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bindgen-0.69.5/build.rs", Edition2018) }
+   0.662749608s  INFO prepare_target{force=false package_id=bindgen v0.69.5 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/bindgen-2e6ec59175f3b17a/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  14: cargo::ops::cargo_compile::compile_ws
+  15: cargo::ops::cargo_compile::compile_with_exec
+  16: cargo::ops::cargo_compile::compile
+  17: cargo::commands::check::exec
+  18: <cargo::cli::Exec>::exec
+  19: cargo::main
+  20: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  21: std::rt::lang_start::<()>::{closure#0}
+  22: std::rt::lang_start_internal
+  23: _main
+  24: <unknown>
+   0.664484788s  INFO prepare_target{force=false package_id=clang-sys v1.8.1 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for clang-sys v1.8.1/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/build.rs", Edition2021) }
+   0.664508336s  INFO prepare_target{force=false package_id=clang-sys v1.8.1 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/clang-sys-333a4494aff29203/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  15: cargo::ops::cargo_compile::compile_ws
+  16: cargo::ops::cargo_compile::compile_with_exec
+  17: cargo::ops::cargo_compile::compile
+  18: cargo::commands::check::exec
+  19: <cargo::cli::Exec>::exec
+  20: cargo::main
+  21: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  22: std::rt::lang_start::<()>::{closure#0}
+  23: std::rt::lang_start_internal
+  24: _main
+  25: <unknown>
+   0.664845911s  INFO prepare_target{force=false package_id=clang-sys v1.8.1 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for clang-sys v1.8.1/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/build.rs", Edition2021) }
+   0.664862717s  INFO prepare_target{force=false package_id=clang-sys v1.8.1 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/clang-sys-a6162a89c0a3cc27/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  15: cargo::ops::cargo_compile::compile_ws
+  16: cargo::ops::cargo_compile::compile_with_exec
+  17: cargo::ops::cargo_compile::compile
+  18: cargo::commands::check::exec
+  19: <cargo::cli::Exec>::exec
+  20: cargo::main
+  21: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  22: std::rt::lang_start::<()>::{closure#0}
+  23: std::rt::lang_start_internal
+  24: _main
+  25: <unknown>
+   0.666633327s  INFO prepare_target{force=false package_id=prettyplease v0.2.37 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for prettyplease v0.2.37/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/prettyplease-0.2.37/build.rs", Edition2021) }
+   0.666656296s  INFO prepare_target{force=false package_id=prettyplease v0.2.37 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/prettyplease-bad2fe81bc7d42f0/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  15: cargo::ops::cargo_compile::compile_ws
+  16: cargo::ops::cargo_compile::compile_with_exec
+  17: cargo::ops::cargo_compile::compile
+  18: cargo::commands::check::exec
+  19: <cargo::cli::Exec>::exec
+  20: cargo::main
+  21: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  22: std::rt::lang_start::<()>::{closure#0}
+  23: std::rt::lang_start_internal
+  24: _main
+  25: <unknown>
+   0.666916706s  INFO prepare_target{force=false package_id=prettyplease v0.2.37 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for prettyplease v0.2.37/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/prettyplease-0.2.37/build.rs", Edition2021) }
+   0.666930552s  INFO prepare_target{force=false package_id=prettyplease v0.2.37 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/prettyplease-9a49c73aaf59fe55/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  15: cargo::ops::cargo_compile::compile_ws
+  16: cargo::ops::cargo_compile::compile_with_exec
+  17: cargo::ops::cargo_compile::compile
+  18: cargo::commands::check::exec
+  19: <cargo::cli::Exec>::exec
+  20: cargo::main
+  21: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  22: std::rt::lang_start::<()>::{closure#0}
+  23: std::rt::lang_start_internal
+  24: _main
+  25: <unknown>
+   0.671463611s  INFO prepare_target{force=false package_id=clang-sys v1.8.1 target="clang_sys"}: cargo::core::compiler::fingerprint: fingerprint error for clang-sys v1.8.1/Build/TargetInner { name_inferred: true, ..: lib_target("clang_sys", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/lib.rs", Edition2021) }
+   0.671490012s  INFO prepare_target{force=false package_id=clang-sys v1.8.1 target="clang_sys"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/clang-sys-39cf193e8d10ecae/lib-clang_sys`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  13: cargo::ops::cargo_compile::compile_ws
+  14: cargo::ops::cargo_compile::compile_with_exec
+  15: cargo::ops::cargo_compile::compile
+  16: cargo::commands::check::exec
+  17: <cargo::cli::Exec>::exec
+  18: cargo::main
+  19: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  20: std::rt::lang_start::<()>::{closure#0}
+  21: std::rt::lang_start_internal
+  22: _main
+  23: <unknown>
+   0.672270036s  INFO prepare_target{force=false package_id=libc v0.2.186 target="libc"}: cargo::core::compiler::fingerprint: fingerprint error for libc v0.2.186/Build/TargetInner { ..: lib_target("libc", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.186/src/lib.rs", Edition2021) }
+   0.672288249s  INFO prepare_target{force=false package_id=libc v0.2.186 target="libc"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/libc-c651f6523c75853b/lib-libc`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  14: cargo::ops::cargo_compile::compile_ws
+  15: cargo::ops::cargo_compile::compile_with_exec
+  16: cargo::ops::cargo_compile::compile
+  17: cargo::commands::check::exec
+  18: <cargo::cli::Exec>::exec
+  19: cargo::main
+  20: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  21: std::rt::lang_start::<()>::{closure#0}
+  22: std::rt::lang_start_internal
+  23: _main
+  24: <unknown>
+   0.673024602s  INFO prepare_target{force=false package_id=libc v0.2.186 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for libc v0.2.186/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.186/build.rs", Edition2021) }
+   0.673040406s  INFO prepare_target{force=false package_id=libc v0.2.186 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/libc-6a30b1128cb09fe2/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  16: cargo::ops::cargo_compile::compile_ws
+  17: cargo::ops::cargo_compile::compile_with_exec
+  18: cargo::ops::cargo_compile::compile
+  19: cargo::commands::check::exec
+  20: <cargo::cli::Exec>::exec
+  21: cargo::main
+  22: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  23: std::rt::lang_start::<()>::{closure#0}
+  24: std::rt::lang_start_internal
+  25: _main
+  26: <unknown>
+   0.673296753s  INFO prepare_target{force=false package_id=libc v0.2.186 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for libc v0.2.186/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.186/build.rs", Edition2021) }
+   0.673309969s  INFO prepare_target{force=false package_id=libc v0.2.186 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/libc-6fef3444f3d18425/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  16: cargo::ops::cargo_compile::compile_ws
+  17: cargo::ops::cargo_compile::compile_with_exec
+  18: cargo::ops::cargo_compile::compile
+  19: cargo::commands::check::exec
+  20: <cargo::cli::Exec>::exec
+  21: cargo::main
+  22: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  23: std::rt::lang_start::<()>::{closure#0}
+  24: std::rt::lang_start_internal
+  25: _main
+  26: <unknown>
+   0.676570429s  INFO prepare_target{force=false package_id=prettyplease v0.2.37 target="prettyplease"}: cargo::core::compiler::fingerprint: fingerprint error for prettyplease v0.2.37/Build/TargetInner { ..: lib_target("prettyplease", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/prettyplease-0.2.37/src/lib.rs", Edition2021) }
+   0.676594523s  INFO prepare_target{force=false package_id=prettyplease v0.2.37 target="prettyplease"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/prettyplease-34011dedfd007ab8/lib-prettyplease`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  13: cargo::ops::cargo_compile::compile_ws
+  14: cargo::ops::cargo_compile::compile_with_exec
+  15: cargo::ops::cargo_compile::compile
+  16: cargo::commands::check::exec
+  17: <cargo::cli::Exec>::exec
+  18: cargo::main
+  19: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  20: std::rt::lang_start::<()>::{closure#0}
+  21: std::rt::lang_start_internal
+  22: _main
+  23: <unknown>
+   0.677180991s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="proc_macro2"}: cargo::core::compiler::fingerprint: fingerprint error for proc-macro2 v1.0.106/Build/TargetInner { ..: lib_target("proc_macro2", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.106/src/lib.rs", Edition2021) }
+   0.677202941s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="proc_macro2"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/proc-macro2-821c49ffb9bcd1ff/lib-proc_macro2`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  14: cargo::ops::cargo_compile::compile_ws
+  15: cargo::ops::cargo_compile::compile_with_exec
+  16: cargo::ops::cargo_compile::compile
+  17: cargo::commands::check::exec
+  18: <cargo::cli::Exec>::exec
+  19: cargo::main
+  20: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  21: std::rt::lang_start::<()>::{closure#0}
+  22: std::rt::lang_start_internal
+  23: _main
+  24: <unknown>
+   0.677973965s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for proc-macro2 v1.0.106/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.106/build.rs", Edition2021) }
+   0.677993989s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/proc-macro2-cdccc19ca8014ce5/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  16: cargo::ops::cargo_compile::compile_ws
+  17: cargo::ops::cargo_compile::compile_with_exec
+  18: cargo::ops::cargo_compile::compile
+  19: cargo::commands::check::exec
+  20: <cargo::cli::Exec>::exec
+  21: cargo::main
+  22: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  23: std::rt::lang_start::<()>::{closure#0}
+  24: std::rt::lang_start_internal
+  25: _main
+  26: <unknown>
+   0.678277537s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for proc-macro2 v1.0.106/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.106/build.rs", Edition2021) }
+   0.678293851s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/proc-macro2-55186d9d699a3656/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  16: cargo::ops::cargo_compile::compile_ws
+  17: cargo::ops::cargo_compile::compile_with_exec
+  18: cargo::ops::cargo_compile::compile
+  19: cargo::commands::check::exec
+  20: <cargo::cli::Exec>::exec
+  21: cargo::main
+  22: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  23: std::rt::lang_start::<()>::{closure#0}
+  24: std::rt::lang_start_internal
+  25: _main
+  26: <unknown>
+   0.679631184s  INFO prepare_target{force=false package_id=syn v2.0.117 target="syn"}: cargo::core::compiler::fingerprint: fingerprint error for syn v2.0.117/Build/TargetInner { ..: lib_target("syn", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.117/src/lib.rs", Edition2021) }
+   0.679656145s  INFO prepare_target{force=false package_id=syn v2.0.117 target="syn"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/syn-72396b5b60d84038/lib-syn`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  14: cargo::ops::cargo_compile::compile_ws
+  15: cargo::ops::cargo_compile::compile_with_exec
+  16: cargo::ops::cargo_compile::compile
+  17: cargo::commands::check::exec
+  18: <cargo::cli::Exec>::exec
+  19: cargo::main
+  20: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  21: std::rt::lang_start::<()>::{closure#0}
+  22: std::rt::lang_start_internal
+  23: _main
+  24: <unknown>
+   0.680888077s  INFO prepare_target{force=false package_id=quote v1.0.45 target="quote"}: cargo::core::compiler::fingerprint: fingerprint error for quote v1.0.45/Build/TargetInner { ..: lib_target("quote", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.45/src/lib.rs", Edition2021) }
+   0.680908582s  INFO prepare_target{force=false package_id=quote v1.0.45 target="quote"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/quote-19c57c9d42a7c786/lib-quote`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  15: cargo::ops::cargo_compile::compile_ws
+  16: cargo::ops::cargo_compile::compile_with_exec
+  17: cargo::ops::cargo_compile::compile
+  18: cargo::commands::check::exec
+  19: <cargo::cli::Exec>::exec
+  20: cargo::main
+  21: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  22: std::rt::lang_start::<()>::{closure#0}
+  23: std::rt::lang_start_internal
+  24: _main
+  25: <unknown>
+   0.681604496s  INFO prepare_target{force=false package_id=quote v1.0.45 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for quote v1.0.45/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.45/build.rs", Edition2021) }
+   0.681622045s  INFO prepare_target{force=false package_id=quote v1.0.45 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/quote-2afecb8421cc1e35/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: cargo::core::compiler::compile
+  16: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  17: cargo::ops::cargo_compile::compile_ws
+  18: cargo::ops::cargo_compile::compile_with_exec
+  19: cargo::ops::cargo_compile::compile
+  20: cargo::commands::check::exec
+  21: <cargo::cli::Exec>::exec
+  22: cargo::main
+  23: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  24: std::rt::lang_start::<()>::{closure#0}
+  25: std::rt::lang_start_internal
+  26: _main
+  27: <unknown>
+   0.681886201s  INFO prepare_target{force=false package_id=quote v1.0.45 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for quote v1.0.45/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.45/build.rs", Edition2021) }
+   0.681900223s  INFO prepare_target{force=false package_id=quote v1.0.45 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/quote-8f86ce6199703334/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: cargo::core::compiler::compile
+  16: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  17: cargo::ops::cargo_compile::compile_ws
+  18: cargo::ops::cargo_compile::compile_with_exec
+  19: cargo::ops::cargo_compile::compile
+  20: cargo::commands::check::exec
+  21: <cargo::cli::Exec>::exec
+  22: cargo::main
+  23: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  24: std::rt::lang_start::<()>::{closure#0}
+  25: std::rt::lang_start_internal
+  26: _main
+  27: <unknown>
+   0.684353700s  INFO prepare_target{force=false package_id=which v4.4.2 target="which"}: cargo::core::compiler::fingerprint: fingerprint error for which v4.4.2/Build/TargetInner { name_inferred: true, ..: lib_target("which", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/which-4.4.2/src/lib.rs", Edition2021) }
+   0.684376018s  INFO prepare_target{force=false package_id=which v4.4.2 target="which"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/which-e11904ae66a0c2c9/lib-which`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  13: cargo::ops::cargo_compile::compile_ws
+  14: cargo::ops::cargo_compile::compile_with_exec
+  15: cargo::ops::cargo_compile::compile
+  16: cargo::commands::check::exec
+  17: <cargo::cli::Exec>::exec
+  18: cargo::main
+  19: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  20: std::rt::lang_start::<()>::{closure#0}
+  21: std::rt::lang_start_internal
+  22: _main
+  23: <unknown>
+   0.685310288s  INFO prepare_target{force=false package_id=rustix v0.38.44 target="rustix"}: cargo::core::compiler::fingerprint: fingerprint error for rustix v0.38.44/Build/TargetInner { ..: lib_target("rustix", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustix-0.38.44/src/lib.rs", Edition2021) }
+   0.685332961s  INFO prepare_target{force=false package_id=rustix v0.38.44 target="rustix"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/rustix-193625f8d6e4d4e9/lib-rustix`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  14: cargo::ops::cargo_compile::compile_ws
+  15: cargo::ops::cargo_compile::compile_with_exec
+  16: cargo::ops::cargo_compile::compile
+  17: cargo::commands::check::exec
+  18: <cargo::cli::Exec>::exec
+  19: cargo::main
+  20: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  21: std::rt::lang_start::<()>::{closure#0}
+  22: std::rt::lang_start_internal
+  23: _main
+  24: <unknown>
+   0.686078893s  INFO prepare_target{force=false package_id=errno v0.3.14 target="errno"}: cargo::core::compiler::fingerprint: fingerprint error for errno v0.3.14/Build/TargetInner { ..: lib_target("errno", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/errno-0.3.14/src/lib.rs", Edition2018) }
+   0.686099893s  INFO prepare_target{force=false package_id=errno v0.3.14 target="errno"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/errno-5bb33404f0d3b604/lib-errno`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  15: cargo::ops::cargo_compile::compile_ws
+  16: cargo::ops::cargo_compile::compile_with_exec
+  17: cargo::ops::cargo_compile::compile
+  18: cargo::commands::check::exec
+  19: <cargo::cli::Exec>::exec
+  20: cargo::main
+  21: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  22: std::rt::lang_start::<()>::{closure#0}
+  23: std::rt::lang_start_internal
+  24: _main
+  25: <unknown>
+   0.688085184s  INFO prepare_target{force=false package_id=rustix v0.38.44 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for rustix v0.38.44/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustix-0.38.44/build.rs", Edition2021) }
+   0.688105268s  INFO prepare_target{force=false package_id=rustix v0.38.44 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/rustix-1eebf777be362125/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  16: cargo::ops::cargo_compile::compile_ws
+  17: cargo::ops::cargo_compile::compile_with_exec
+  18: cargo::ops::cargo_compile::compile
+  19: cargo::commands::check::exec
+  20: <cargo::cli::Exec>::exec
+  21: cargo::main
+  22: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  23: std::rt::lang_start::<()>::{closure#0}
+  24: std::rt::lang_start_internal
+  25: _main
+  26: <unknown>
+   0.688384387s  INFO prepare_target{force=false package_id=rustix v0.38.44 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for rustix v0.38.44/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustix-0.38.44/build.rs", Edition2021) }
+   0.688398100s  INFO prepare_target{force=false package_id=rustix v0.38.44 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/rustix-4e10d66cf95cb592/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  16: cargo::ops::cargo_compile::compile_ws
+  17: cargo::ops::cargo_compile::compile_with_exec
+  18: cargo::ops::cargo_compile::compile
+  19: cargo::commands::check::exec
+  20: <cargo::cli::Exec>::exec
+  21: cargo::main
+  22: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  23: std::rt::lang_start::<()>::{closure#0}
+  24: std::rt::lang_start_internal
+  25: _main
+  26: <unknown>
+   0.689477693s  INFO prepare_target{force=false package_id=pyo3 v0.22.6 target="pyo3"}: cargo::core::compiler::fingerprint: fingerprint error for pyo3 v0.22.6/Check { test: false }/TargetInner { ..: lib_target("pyo3", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-0.22.6/src/lib.rs", Edition2021) }
+   0.689498652s  INFO prepare_target{force=false package_id=pyo3 v0.22.6 target="pyo3"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/pyo3-e0e71007aa8693f6/lib-pyo3`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: _main
+  19: <unknown>
+   0.691186174s  INFO prepare_target{force=false package_id=indoc v2.0.7 target="indoc"}: cargo::core::compiler::fingerprint: fingerprint error for indoc v2.0.7/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("indoc", ["proc-macro"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/indoc-2.0.7/src/lib.rs", Edition2021) }
+   0.691209988s  INFO prepare_target{force=false package_id=indoc v2.0.7 target="indoc"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/indoc-fd56b2e03022ae98/lib-indoc`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+  20: <unknown>
+   0.691913544s  INFO prepare_target{force=false package_id=memoffset v0.9.1 target="memoffset"}: cargo::core::compiler::fingerprint: fingerprint error for memoffset v0.9.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("memoffset", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memoffset-0.9.1/src/lib.rs", Edition2015) }
+   0.691931047s  INFO prepare_target{force=false package_id=memoffset v0.9.1 target="memoffset"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/memoffset-9e47d66e2bd2400c/lib-memoffset`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+  20: <unknown>
+   0.692557454s  INFO prepare_target{force=false package_id=memoffset v0.9.1 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for memoffset v0.9.1/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memoffset-0.9.1/build.rs", Edition2015) }
+   0.692590504s  INFO prepare_target{force=false package_id=memoffset v0.9.1 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/memoffset-166b92586f72187f/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+  22: <unknown>
+   0.692816549s  INFO prepare_target{force=false package_id=memoffset v0.9.1 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for memoffset v0.9.1/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memoffset-0.9.1/build.rs", Edition2015) }
+   0.692831338s  INFO prepare_target{force=false package_id=memoffset v0.9.1 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/memoffset-b89d519f7e6eac1b/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+  22: <unknown>
+   0.695094083s  INFO prepare_target{force=false package_id=pyo3 v0.22.6 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for pyo3 v0.22.6/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-0.22.6/build.rs", Edition2021) }
+   0.695118015s  INFO prepare_target{force=false package_id=pyo3 v0.22.6 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/pyo3-095fe6f6dbebd92e/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+  21: <unknown>
+   0.695376325s  INFO prepare_target{force=false package_id=pyo3 v0.22.6 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for pyo3 v0.22.6/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-0.22.6/build.rs", Edition2021) }
+   0.695391011s  INFO prepare_target{force=false package_id=pyo3 v0.22.6 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/pyo3-ad5bf35a277190e5/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+  21: <unknown>
+   0.695934599s  INFO prepare_target{force=false package_id=pyo3-build-config v0.22.6 target="pyo3_build_config"}: cargo::core::compiler::fingerprint: fingerprint error for pyo3-build-config v0.22.6/Build/TargetInner { ..: lib_target("pyo3_build_config", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.22.6/src/lib.rs", Edition2021) }
+   0.695950952s  INFO prepare_target{force=false package_id=pyo3-build-config v0.22.6 target="pyo3_build_config"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/pyo3-build-config-def2475864a22ad4/lib-pyo3_build_config`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+  22: <unknown>
+   0.697139447s  INFO prepare_target{force=false package_id=pyo3-build-config v0.22.6 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for pyo3-build-config v0.22.6/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.22.6/build.rs", Edition2021) }
+   0.697160825s  INFO prepare_target{force=false package_id=pyo3-build-config v0.22.6 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/pyo3-build-config-11fa673c7f60be8f/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  14: cargo::ops::cargo_compile::compile_ws
+  15: cargo::ops::cargo_compile::compile_with_exec
+  16: cargo::ops::cargo_compile::compile
+  17: cargo::commands::check::exec
+  18: <cargo::cli::Exec>::exec
+  19: cargo::main
+  20: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  21: std::rt::lang_start::<()>::{closure#0}
+  22: std::rt::lang_start_internal
+  23: _main
+  24: <unknown>
+   0.697426484s  INFO prepare_target{force=false package_id=pyo3-build-config v0.22.6 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for pyo3-build-config v0.22.6/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.22.6/build.rs", Edition2021) }
+   0.697439869s  INFO prepare_target{force=false package_id=pyo3-build-config v0.22.6 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/pyo3-build-config-aa9564a5855022b6/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  14: cargo::ops::cargo_compile::compile_ws
+  15: cargo::ops::cargo_compile::compile_with_exec
+  16: cargo::ops::cargo_compile::compile
+  17: cargo::commands::check::exec
+  18: <cargo::cli::Exec>::exec
+  19: cargo::main
+  20: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  21: std::rt::lang_start::<()>::{closure#0}
+  22: std::rt::lang_start_internal
+  23: _main
+  24: <unknown>
+   0.698432826s  INFO prepare_target{force=false package_id=target-lexicon v0.12.16 target="target_lexicon"}: cargo::core::compiler::fingerprint: fingerprint error for target-lexicon v0.12.16/Build/TargetInner { ..: lib_target("target_lexicon", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/target-lexicon-0.12.16/src/lib.rs", Edition2018) }
+   0.698460909s  INFO prepare_target{force=false package_id=target-lexicon v0.12.16 target="target_lexicon"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/target-lexicon-99a2e329c4689247/lib-target_lexicon`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  15: cargo::ops::cargo_compile::compile_ws
+  16: cargo::ops::cargo_compile::compile_with_exec
+  17: cargo::ops::cargo_compile::compile
+  18: cargo::commands::check::exec
+  19: <cargo::cli::Exec>::exec
+  20: cargo::main
+  21: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  22: std::rt::lang_start::<()>::{closure#0}
+  23: std::rt::lang_start_internal
+  24: _main
+  25: <unknown>
+   0.699413448s  INFO prepare_target{force=false package_id=target-lexicon v0.12.16 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for target-lexicon v0.12.16/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/target-lexicon-0.12.16/build.rs", Edition2018) }
+   0.699434682s  INFO prepare_target{force=false package_id=target-lexicon v0.12.16 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/target-lexicon-f81ee624187466c5/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: cargo::core::compiler::compile
+  16: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  17: cargo::ops::cargo_compile::compile_ws
+  18: cargo::ops::cargo_compile::compile_with_exec
+  19: cargo::ops::cargo_compile::compile
+  20: cargo::commands::check::exec
+  21: <cargo::cli::Exec>::exec
+  22: cargo::main
+  23: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  24: std::rt::lang_start::<()>::{closure#0}
+  25: std::rt::lang_start_internal
+  26: _main
+  27: <unknown>
+   0.699735454s  INFO prepare_target{force=false package_id=target-lexicon v0.12.16 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for target-lexicon v0.12.16/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/target-lexicon-0.12.16/build.rs", Edition2018) }
+   0.699749309s  INFO prepare_target{force=false package_id=target-lexicon v0.12.16 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/target-lexicon-1be54db286071639/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: cargo::core::compiler::compile
+  15: cargo::core::compiler::compile
+  16: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  17: cargo::ops::cargo_compile::compile_ws
+  18: cargo::ops::cargo_compile::compile_with_exec
+  19: cargo::ops::cargo_compile::compile
+  20: cargo::commands::check::exec
+  21: <cargo::cli::Exec>::exec
+  22: cargo::main
+  23: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  24: std::rt::lang_start::<()>::{closure#0}
+  25: std::rt::lang_start_internal
+  26: _main
+  27: <unknown>
+   0.700540016s  INFO prepare_target{force=false package_id=pyo3-ffi v0.22.6 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for pyo3-ffi v0.22.6/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-ffi-0.22.6/build.rs", Edition2021) }
+   0.700558650s  INFO prepare_target{force=false package_id=pyo3-ffi v0.22.6 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/pyo3-ffi-255dc06e09f54c9d/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+  22: <unknown>
+   0.700802329s  INFO prepare_target{force=false package_id=pyo3-ffi v0.22.6 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for pyo3-ffi v0.22.6/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-ffi-0.22.6/build.rs", Edition2021) }
+   0.700816002s  INFO prepare_target{force=false package_id=pyo3-ffi v0.22.6 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/pyo3-ffi-9aad2cc0ea7bba5b/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+  22: <unknown>
+   0.701275343s  INFO prepare_target{force=false package_id=pyo3-ffi v0.22.6 target="pyo3_ffi"}: cargo::core::compiler::fingerprint: fingerprint error for pyo3-ffi v0.22.6/Check { test: false }/TargetInner { ..: lib_target("pyo3_ffi", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-ffi-0.22.6/src/lib.rs", Edition2021) }
+   0.701291619s  INFO prepare_target{force=false package_id=pyo3-ffi v0.22.6 target="pyo3_ffi"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/pyo3-ffi-16efbfa80c39824b/lib-pyo3_ffi`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+  20: <unknown>
+   0.701744295s  INFO prepare_target{force=false package_id=pyo3-macros v0.22.6 target="pyo3_macros"}: cargo::core::compiler::fingerprint: fingerprint error for pyo3-macros v0.22.6/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("pyo3_macros", ["proc-macro"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-macros-0.22.6/src/lib.rs", Edition2021) }
+   0.701762572s  INFO prepare_target{force=false package_id=pyo3-macros v0.22.6 target="pyo3_macros"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/pyo3-macros-3c7e39f5cae18d09/lib-pyo3_macros`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+  20: <unknown>
+   0.702384493s  INFO prepare_target{force=false package_id=pyo3-macros-backend v0.22.6 target="pyo3_macros_backend"}: cargo::core::compiler::fingerprint: fingerprint error for pyo3-macros-backend v0.22.6/Build/TargetInner { ..: lib_target("pyo3_macros_backend", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-macros-backend-0.22.6/src/lib.rs", Edition2021) }
+   0.702402353s  INFO prepare_target{force=false package_id=pyo3-macros-backend v0.22.6 target="pyo3_macros_backend"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/pyo3-macros-backend-3ae5291e6ea9980f/lib-pyo3_macros_backend`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+  21: <unknown>
+   0.706438107s  INFO prepare_target{force=false package_id=pyo3-macros-backend v0.22.6 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for pyo3-macros-backend v0.22.6/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-macros-backend-0.22.6/build.rs", Edition2021) }
+   0.706459679s  INFO prepare_target{force=false package_id=pyo3-macros-backend v0.22.6 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/pyo3-macros-backend-43c06c84b75c2cb1/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  13: cargo::ops::cargo_compile::compile_ws
+  14: cargo::ops::cargo_compile::compile_with_exec
+  15: cargo::ops::cargo_compile::compile
+  16: cargo::commands::check::exec
+  17: <cargo::cli::Exec>::exec
+  18: cargo::main
+  19: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  20: std::rt::lang_start::<()>::{closure#0}
+  21: std::rt::lang_start_internal
+  22: _main
+  23: <unknown>
+   0.706711803s  INFO prepare_target{force=false package_id=pyo3-macros-backend v0.22.6 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for pyo3-macros-backend v0.22.6/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-macros-backend-0.22.6/build.rs", Edition2021) }
+   0.706727638s  INFO prepare_target{force=false package_id=pyo3-macros-backend v0.22.6 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/pyo3-macros-backend-cb5450457aea582b/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  13: cargo::ops::cargo_compile::compile_ws
+  14: cargo::ops::cargo_compile::compile_with_exec
+  15: cargo::ops::cargo_compile::compile
+  16: cargo::commands::check::exec
+  17: <cargo::cli::Exec>::exec
+  18: cargo::main
+  19: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  20: std::rt::lang_start::<()>::{closure#0}
+  21: std::rt::lang_start_internal
+  22: _main
+  23: <unknown>
+   0.707314597s  INFO prepare_target{force=false package_id=serde v1.0.228 target="serde"}: cargo::core::compiler::fingerprint: fingerprint error for serde v1.0.228/Check { test: false }/TargetInner { ..: lib_target("serde", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs", Edition2021) }
+   0.707334219s  INFO prepare_target{force=false package_id=serde v1.0.228 target="serde"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/serde-ae9068919892d828/lib-serde`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+  20: <unknown>
+   0.708042995s  INFO prepare_target{force=false package_id=serde v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde v1.0.228/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/build.rs", Edition2021) }
+   0.708058634s  INFO prepare_target{force=false package_id=serde v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/serde-ef661951667f1b9c/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+  22: <unknown>
+   0.708296675s  INFO prepare_target{force=false package_id=serde v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde v1.0.228/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/build.rs", Edition2021) }
+   0.708310798s  INFO prepare_target{force=false package_id=serde v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/serde-35cf71b70e6ab8c2/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+  22: <unknown>
+   0.708868303s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="serde_core"}: cargo::core::compiler::fingerprint: fingerprint error for serde_core v1.0.228/Check { test: false }/TargetInner { ..: lib_target("serde_core", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/src/lib.rs", Edition2021) }
+   0.708887318s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="serde_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/serde_core-73e1a6be8cce97c2/lib-serde_core`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+  21: <unknown>
+   0.709523019s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde_core v1.0.228/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/build.rs", Edition2021) }
+   0.709540799s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/serde_core-27382da77310e414/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  13: cargo::ops::cargo_compile::compile_ws
+  14: cargo::ops::cargo_compile::compile_with_exec
+  15: cargo::ops::cargo_compile::compile
+  16: cargo::commands::check::exec
+  17: <cargo::cli::Exec>::exec
+  18: cargo::main
+  19: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  20: std::rt::lang_start::<()>::{closure#0}
+  21: std::rt::lang_start_internal
+  22: _main
+  23: <unknown>
+   0.709945644s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde_core v1.0.228/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/build.rs", Edition2021) }
+   0.710061521s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/serde_core-1256cbdc4f926043/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  13: cargo::ops::cargo_compile::compile_ws
+  14: cargo::ops::cargo_compile::compile_with_exec
+  15: cargo::ops::cargo_compile::compile
+  16: cargo::commands::check::exec
+  17: <cargo::cli::Exec>::exec
+  18: cargo::main
+  19: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  20: std::rt::lang_start::<()>::{closure#0}
+  21: std::rt::lang_start_internal
+  22: _main
+  23: <unknown>
+   0.710666999s  INFO prepare_target{force=false package_id=serde_derive v1.0.228 target="serde_derive"}: cargo::core::compiler::fingerprint: fingerprint error for serde_derive v1.0.228/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("serde_derive", ["proc-macro"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_derive-1.0.228/src/lib.rs", Edition2021) }
+   0.710687921s  INFO prepare_target{force=false package_id=serde_derive v1.0.228 target="serde_derive"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/serde_derive-a029ee373b609d3d/lib-serde_derive`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+  21: <unknown>
+   0.711748204s  INFO prepare_target{force=false package_id=serde_json v1.0.150 target="serde_json"}: cargo::core::compiler::fingerprint: fingerprint error for serde_json v1.0.150/Check { test: false }/TargetInner { ..: lib_target("serde_json", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.150/src/lib.rs", Edition2021) }
+   0.711786456s  INFO prepare_target{force=false package_id=serde_json v1.0.150 target="serde_json"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/serde_json-f65ed962296db684/lib-serde_json`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: _main
+  19: <unknown>
+   0.713433999s  INFO prepare_target{force=false package_id=serde_json v1.0.150 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde_json v1.0.150/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.150/build.rs", Edition2021) }
+   0.713457656s  INFO prepare_target{force=false package_id=serde_json v1.0.150 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/serde_json-23c69b2316f0caf0/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+  21: <unknown>
+   0.713909993s  INFO prepare_target{force=false package_id=serde_json v1.0.150 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde_json v1.0.150/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.150/build.rs", Edition2021) }
+   0.713930675s  INFO prepare_target{force=false package_id=serde_json v1.0.150 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/serde_json-a4c0f610c9942295/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+  21: <unknown>
+   0.714702214s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="zmij"}: cargo::core::compiler::fingerprint: fingerprint error for zmij v1.0.21/Check { test: false }/TargetInner { ..: lib_target("zmij", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.21/src/lib.rs", Edition2021) }
+   0.714728934s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="zmij"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/zmij-d143b36a5fc56bef/lib-zmij`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+  20: <unknown>
+   0.715424039s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for zmij v1.0.21/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.21/build.rs", Edition2021) }
+   0.715442521s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/zmij-38000880be2c07fe/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+  22: <unknown>
+   0.715796583s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for zmij v1.0.21/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.21/build.rs", Edition2021) }
+   0.715813232s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/zmij-de7f0bf925176701/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+  22: <unknown>
+   0.716380796s  INFO prepare_target{force=false package_id=thiserror v1.0.69 target="thiserror"}: cargo::core::compiler::fingerprint: fingerprint error for thiserror v1.0.69/Check { test: false }/TargetInner { ..: lib_target("thiserror", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-1.0.69/src/lib.rs", Edition2021) }
+   0.716398199s  INFO prepare_target{force=false package_id=thiserror v1.0.69 target="thiserror"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/thiserror-df42c330be70d32b/lib-thiserror`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: _main
+  19: <unknown>
+   0.717073823s  INFO prepare_target{force=false package_id=thiserror v1.0.69 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for thiserror v1.0.69/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-1.0.69/build.rs", Edition2021) }
+   0.717089827s  INFO prepare_target{force=false package_id=thiserror v1.0.69 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/thiserror-f48eb40c3634367c/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+  21: <unknown>
+   0.717357913s  INFO prepare_target{force=false package_id=thiserror v1.0.69 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for thiserror v1.0.69/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-1.0.69/build.rs", Edition2021) }
+   0.717373177s  INFO prepare_target{force=false package_id=thiserror v1.0.69 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/thiserror-2fbc198805c1409c/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+  21: <unknown>
+   0.718301048s  INFO prepare_target{force=false package_id=thiserror-impl v1.0.69 target="thiserror_impl"}: cargo::core::compiler::fingerprint: fingerprint error for thiserror-impl v1.0.69/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("thiserror_impl", ["proc-macro"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-impl-1.0.69/src/lib.rs", Edition2021) }
+   0.718323546s  INFO prepare_target{force=false package_id=thiserror-impl v1.0.69 target="thiserror_impl"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/thiserror-impl-f62e4f0865858537/lib-thiserror_impl`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+  20: <unknown>
+   0.721025260s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="iyou_chart_kernel"}: cargo::core::compiler::fingerprint: fingerprint error for iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust)/Check { test: true }/TargetInner { ..: lib_target("iyou_chart_kernel", ["cdylib"], "/Users/macuser/CODE_BASE/iyou_name_rust/src/lib.rs", Edition2021) }
+   0.721049682s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="iyou_chart_kernel"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/iyou_chart_kernel-dd52720358a3780c/test-lib-iyou_chart_kernel`
 
 Caused by:
     No such file or directory (os error 2)
@@ -106,8 +2223,123 @@ Stack backtrace:
   16: std::rt::lang_start_internal
   17: _main
   18: <unknown>
-   0.722128104s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="simple_generation"}: cargo::core::compiler::fingerprint: fingerprint error for iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust)/Check { test: false }/TargetInner { kind: "example", name: "simple_generation", tested: false, benched: false, ..: with_path("/Users/macuser/CODE_BASE/iyou_name_rust/examples/simple_generation.rs", Edition2021) }
-   0.722254339s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="simple_generation"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/iyou_chart_kernel-c50b818aad9271fb/example-simple_generation`
+   0.722479064s  INFO prepare_target{force=false package_id=approx v0.5.1 target="approx"}: cargo::core::compiler::fingerprint: fingerprint error for approx v0.5.1/Check { test: false }/TargetInner { ..: lib_target("approx", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/approx-0.5.1/src/lib.rs", Edition2015) }
+   0.722501184s  INFO prepare_target{force=false package_id=approx v0.5.1 target="approx"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/approx-cf57a163aef6f4f5/lib-approx`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: _main
+  19: <unknown>
+   0.724472716s  INFO prepare_target{force=false package_id=num-traits v0.2.19 target="num_traits"}: cargo::core::compiler::fingerprint: fingerprint error for num-traits v0.2.19/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("num_traits", ["lib"], "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/num-traits-0.2.19/src/lib.rs", Edition2021) }
+   0.724494223s  INFO prepare_target{force=false package_id=num-traits v0.2.19 target="num_traits"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/num-traits-4563573bef249462/lib-num_traits`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+  20: <unknown>
+   0.725100062s  INFO prepare_target{force=false package_id=num-traits v0.2.19 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for num-traits v0.2.19/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/num-traits-0.2.19/build.rs", Edition2021) }
+   0.725119909s  INFO prepare_target{force=false package_id=num-traits v0.2.19 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/num-traits-cb283c21bc27a59c/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::custom_build::build_work
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+  22: <unknown>
+   0.725402448s  INFO prepare_target{force=false package_id=num-traits v0.2.19 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for num-traits v0.2.19/Build/TargetInner { ..: custom_build_target("build-script-build", "/Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/num-traits-0.2.19/build.rs", Edition2021) }
+   0.725417198s  INFO prepare_target{force=false package_id=num-traits v0.2.19 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/num-traits-69ad32e3d6078a56/build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+  22: <unknown>
+   0.726254852s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="simple_generation"}: cargo::core::compiler::fingerprint: fingerprint error for iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust)/Check { test: false }/TargetInner { kind: "example", name: "simple_generation", tested: false, benched: false, ..: with_path("/Users/macuser/CODE_BASE/iyou_name_rust/examples/simple_generation.rs", Edition2021) }
+   0.726291995s  INFO prepare_target{force=false package_id=iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust) target="simple_generation"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/.fingerprint/iyou_chart_kernel-b049ddd3407d8704/example-simple_generation`
 
 Caused by:
     No such file or directory (os error 2)
@@ -132,323 +2364,39 @@ Stack backtrace:
   16: std::rt::lang_start_internal
   17: _main
   18: <unknown>
-   Compiling magick_rust v0.15.0
-error: failed to run custom build command for `magick_rust v0.15.0`
-note: To improve backtraces for build dependencies, set the CARGO_PROFILE_DEV_BUILD_OVERRIDE_DEBUG=true environment variable to enable debug information generation.
-
-Caused by:
-  process didn't exit successfully: `/Users/macuser/CODE_BASE/iyou_name_rust/target/debug/build/magick_rust-29091405accfcf59/build-script-build` (exit status: 101)
-  --- stdout
-  cargo:rerun-if-env-changed=IMAGE_MAGICK_LIB_DIRS
-  cargo:rerun-if-env-changed=IMAGE_MAGICK_DIR
-  cargo:rerun-if-env-changed=MAGICKWAND_NO_PKG_CONFIG
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
-  cargo:rerun-if-env-changed=PKG_CONFIG
-  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
-  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
-  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
-  cargo:rerun-if-env-changed=PKG_CONFIG
-  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
-  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=MAGICKWAND_NO_PKG_CONFIG
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
-  cargo:rerun-if-env-changed=PKG_CONFIG
-  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
-  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
-  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
-  cargo:rerun-if-env-changed=PKG_CONFIG
-  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
-  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
-  cargo:rustc-link-search=native=/usr/local/Cellar/imagemagick/7.1.2-24/lib
-  cargo:rerun-if-env-changed=IMAGE_MAGICK_INCLUDE_DIRS
-  cargo:rerun-if-env-changed=IMAGE_MAGICK_DIR
-  cargo:rerun-if-env-changed=MAGICKWAND_NO_PKG_CONFIG
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
-  cargo:rerun-if-env-changed=PKG_CONFIG
-  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
-  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
-  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
-  cargo:rerun-if-env-changed=PKG_CONFIG
-  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
-  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=MAGICKWAND_NO_PKG_CONFIG
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
-  cargo:rerun-if-env-changed=PKG_CONFIG
-  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
-  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
-  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
-  cargo:rerun-if-env-changed=PKG_CONFIG
-  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
-  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
-  cargo:include=/usr/local/Cellar/imagemagick/7.1.2-24/include/ImageMagick-7
-  cargo:rerun-if-env-changed=IMAGE_MAGICK_LIBS
-  cargo:rerun-if-env-changed=MAGICKWAND_NO_PKG_CONFIG
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
-  cargo:rerun-if-env-changed=PKG_CONFIG
-  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
-  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
-  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
-  cargo:rerun-if-env-changed=PKG_CONFIG
-  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
-  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=MAGICKWAND_NO_PKG_CONFIG
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
-  cargo:rerun-if-env-changed=PKG_CONFIG
-  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
-  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
-  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
-  cargo:rerun-if-env-changed=PKG_CONFIG
-  cargo:rerun-if-env-changed=MAGICKWAND_STATIC
-  cargo:rerun-if-env-changed=MAGICKWAND_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-apple-darwin
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_apple_darwin
-  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
-  cargo:rerun-if-env-changed=IMAGE_MAGICK_STATIC
-  cargo:rustc-link-lib=dylib=MagickWand-7.Q16HDRI
-  cargo:rustc-link-lib=dylib=MagickCore-7.Q16HDRI
-
-  --- stderr
-
-  thread 'main' (1626716) panicked at /Users/macuser/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bindgen-0.59.2/src/ir/context.rs:878:9:
-  "wait_struct_(unnamed_at_/Library/Developer/CommandLineTools/SDKs/MacOSX_sdk/usr/include/sys/wait_h_199_2)" is not a valid Ident
-  stack backtrace:
-     0: __rustc::rust_begin_unwind
-               at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/panicking.rs:689:5
-     1: core::panicking::panic_fmt
-               at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/core/src/panicking.rs:80:14
-     2: proc_macro2::fallback::validate_ident
-     3: proc_macro2::fallback::Ident::new_checked
-     4: proc_macro2::imp::Ident::new_checked
-     5: proc_macro2::Ident::new
-     6: bindgen::ir::context::BindgenContext::rust_ident_raw
-     7: bindgen::ir::context::BindgenContext::rust_ident
-     8: <bindgen::ir::comp::CompInfo as bindgen::codegen::CodeGenerator>::codegen
-     9: <bindgen::ir::ty::Type as bindgen::codegen::CodeGenerator>::codegen
-    10: <bindgen::ir::item::Item as bindgen::codegen::CodeGenerator>::codegen
-    11: <bindgen::ir::comp::CompInfo as bindgen::codegen::CodeGenerator>::codegen
-    12: <bindgen::ir::ty::Type as bindgen::codegen::CodeGenerator>::codegen
-    13: <bindgen::ir::item::Item as bindgen::codegen::CodeGenerator>::codegen
-    14: <bindgen::ir::module::Module as bindgen::codegen::CodeGenerator>::codegen::{{closure}}
-    15: <bindgen::ir::module::Module as bindgen::codegen::CodeGenerator>::codegen
-    16: <bindgen::ir::item::Item as bindgen::codegen::CodeGenerator>::codegen
-    17: bindgen::codegen::codegen::{{closure}}
-    18: bindgen::ir::context::BindgenContext::gen
-    19: bindgen::codegen::codegen
-    20: bindgen::Bindings::generate
-    21: bindgen::Builder::generate
-    22: build_script_build::main
-    23: core::ops::function::FnOnce::call_once
-  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+   Compiling proc-macro2 v1.0.106
+   Compiling target-lexicon v0.12.16
+   Compiling quote v1.0.45
+   Compiling libc v0.2.186
+error: could not compile `quote` (build script) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+   Compiling clang-sys v1.8.1
+error: could not compile `proc-macro2` (build script) due to 1 previous error
+   Compiling rustix v0.38.44
+error: could not compile `libc` (build script) due to 1 previous error
+   Compiling prettyplease v0.2.37
+error: could not compile `target-lexicon` (build script) due to 1 previous error
+error: could not compile `prettyplease` (build script) due to 1 previous error
+   Compiling bindgen v0.69.5
+error: could not compile `rustix` (build script) due to 1 previous error
+   Compiling serde_core v1.0.228
+error: could not compile `clang-sys` (build script) due to 1 previous error
+   Compiling memoffset v0.9.1
+error: could not compile `libc` (build script) due to 1 previous error
+   Compiling zmij v1.0.21
+error: could not compile `bindgen` (build script) due to 1 previous error
+   Compiling serde v1.0.228
+error: could not compile `serde_core` (build script) due to 1 previous error
+   Compiling num-traits v0.2.19
+error: could not compile `memoffset` (build script) due to 1 previous error
+   Compiling thiserror v1.0.69
+error: could not compile `zmij` (build script) due to 1 previous error
+   Compiling serde_json v1.0.150
+error: could not compile `serde` (build script) due to 1 previous error
+   Compiling indoc v2.0.7
+error: could not compile `num-traits` (build script) due to 1 previous error
+   Compiling iyou_chart_kernel v0.1.0 (/Users/macuser/CODE_BASE/iyou_name_rust)
+error: could not compile `thiserror` (build script) due to 1 previous error
+error: could not compile `serde_json` (build script) due to 1 previous error
+error: could not compile `iyou_chart_kernel` (build script) due to 1 previous error
+error: could not compile `indoc` (lib) due to 1 previous error
